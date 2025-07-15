@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "치지직 카테고리 정렬기",
+  "version": "1.0",
+  "description": "팔로우한 채널을 카테고리별로 정리해줍니다.",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://chzzk.naver.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://chzzk.naver.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "128": "icon128.png"
+  }
+}
